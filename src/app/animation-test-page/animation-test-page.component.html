@@ -1,0 +1,9 @@
+<div class="overlay">
+  <div class="overlay__container">
+    <div class="overlay__panel overlay__panel--left" [class.animate]="isOpen"></div>
+    <div class="overlay__panel overlay__panel--right" [class.animate]="isOpen"></div>
+  </div>
+  <button (click)="isOpen = !isOpen" style="position: absolute; top: 0; right: 50;">
+    <span>test animazione</span>
+  </button>
+</div>

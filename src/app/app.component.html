@@ -5,7 +5,10 @@
             <li><a [routerLink]="['/']" [queryParamsHandling]="'merge'" class="nav-link">Home</a></li>
             <li><a [routerLink]="['/info']" [queryParamsHandling]="'merge'" class="nav-link">Info</a></li>
             <li><a [routerLink]="['/gift']" [queryParamsHandling]="'merge'" class="nav-link">Gift</a></li>
+            <li><a [routerLink]="['/test']" [queryParamsHandling]="'merge'" class="nav-link">Test</a></li>
         </ul>
     </nav>
 </header>
-<router-outlet></router-outlet>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
