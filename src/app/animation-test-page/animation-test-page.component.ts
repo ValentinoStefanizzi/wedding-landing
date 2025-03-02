@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class AnimationTestPageComponent {
-  isOpen = false;
+  isEnabled = false;
 
-  openOverlay() {
-    this.isOpen = true;
+  toggleAnimation() {
+    this.isEnabled = !this.isEnabled;
   }
 
 }
