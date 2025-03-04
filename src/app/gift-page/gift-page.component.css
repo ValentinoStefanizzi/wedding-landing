@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  font-size: 2em;
+  color: #343a40;
+}
+
+p {
+  font-size: 1.2em;
+  color: #6c757d;
+}
