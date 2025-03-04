@@ -28,8 +28,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               {
-                "glob": "**/*",
-                "input": "public"
+                "glob": "index.html",
+                "input": "dist/docs",
+                "output": "/404.html"
               }
             ],
             "styles": [
