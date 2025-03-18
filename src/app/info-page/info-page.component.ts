@@ -6,7 +6,6 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-info-page',
   templateUrl: './info-page.component.html',
   styleUrls: ['./info-page.component.css'],
-  standalone: false,
   animations: [
     trigger('slideIn', [
       transition(':enter', [

@@ -1,0 +1,16 @@
+{
+  "LANDING": {
+    "TITLE": "Benvenuti al nostro matrimonio!",
+    "SUBTITLE": "Grazie per essere qui con noi in questo giorno speciale."
+  },
+  "INFO": {
+    "TITLE": "Informazioni",
+    "SUBTITLE": "Tutte le informazioni di cui hai bisogno per partecipare al nostro matrimonio.",
+    "DATE": "Data",
+    "LOCATION": "Luogo"
+  },
+  "GIFT": {
+    "TITLE": "Regali",
+    "SUBTITLE": "Se desideri farci un regalo, puoi farlo qui."
+  }
+}

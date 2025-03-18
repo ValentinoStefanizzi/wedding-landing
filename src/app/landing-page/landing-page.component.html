@@ -1,14 +1,26 @@
-<div class="overlay" (click)="animationState = true;">
+<div class="h-full w-full" (click)="animationState = true">
+  <div class="h-full w-full flex">
+    <div
+      class="bg-[length:200%_100%] h-full w-1/2 bg-[url(/assets/TestFacciata.svg)] bg-no-repeat bg-left"
+      [ngClass]="{ 'perspective-midrange rotate-[-180px] origin-left duration-[3s]': animationState }"
+    ></div>
+    <div
+      class="bg-[length:200%_100%] h-full w-1/2 bg-[url(/assets/TestFacciata.svg)] bg-no-repeat bg-right"
+      [ngClass]="{ 'perspective-midrange rotate-[180px] origin-right duration-[3s]': animationState }"
+    ></div>
+  </div>
+</div>
+<!-- <div class="overlay" (click)="animationState = true;">
   <div class="overlay__container">
     <div class="overlay__panel overlay__panel--left" [class.animate]="animationState"></div>
     <div class="overlay__panel overlay__panel--right" [class.animate]="animationState"></div>
   </div>
-</div>
-<div class="content" [@fadeIn]="animationState">
+</div> -->
+<!-- <div class="content" [@fadeIn]="animationState">
   <div class="content__container">
     <div class="content__text">
-      <h1>Benvenuti al nostro matrimonio!</h1>
-      <p>Grazie per essere qui con noi in questo giorno speciale.</p>
+      <h1>{{ 'LANDING.TITLE' | translate }}</h1>
+      <p>{{ 'LANDING.SUBTITLE' | translate }}</p>
     </div>
   </div>
-</div>
+</div> -->

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-header: #f8f9fa;
+  --color-primary: #b0c794;
+  --color-bermuda: #78dcca;
+}
+
+html, body, app-root {
+  width:100%; 
+  height:100%;
+}

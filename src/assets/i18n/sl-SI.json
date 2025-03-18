@@ -1,0 +1,16 @@
+{
+  "LANDING": {
+    "TITLE": "Dobrodošli na najini poroki!",
+    "SUBTITLE": "Hvala, ker ste danes z nami na ta poseben dan."
+  },
+  "INFO": {
+    "TITLE": "Informacije",
+    "SUBTITLE": "Vse informacije, ki jih potrebujete za udeležbo na najini poroki.",
+    "DATE": "Datum",
+    "LOCATION": "Lokacija"
+  },
+  "GIFT": {
+    "TITLE": "Darila",
+    "SUBTITLE": "Če nam želite podariti darilo, lahko to storite tukaj."
+  }
+}

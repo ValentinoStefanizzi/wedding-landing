@@ -5,7 +5,6 @@ import { trigger, transition, style, animate } from '@angular/animations';
   selector: 'app-gift-page',
   templateUrl: './gift-page.component.html',
   styleUrls: ['./gift-page.component.css'],
-  standalone: false,
   animations: [
     trigger('fadeIn', [
       transition(':enter', [
