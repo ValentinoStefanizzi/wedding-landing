@@ -6,28 +6,48 @@
     <div
       class="h-full w-1/2 bg-[url(/assets/TestFacciata.svg)] bg-[length:200%_100%] bg-left bg-no-repeat"
       [ngClass]="{
-        'origin-left rotate-y-180 slow-rotate perspective-midrange':
+        'slow-rotate origin-left rotate-y-180 perspective-midrange':
           animationState,
       }"
     >
-    <button class="relative top-2/3 left-1/4 bg-[url(/assets/SLO.png)] bg-cover z-10 w-52 h-32" (click)="chooseLanguage('sl-SI')"></button>
-  </div>
+      <div
+        class="relative top-2/3 left-1/4 z-10 h-12 w-24 md:w-64 md:h-32 transition-opacity duration-500"
+        [ngClass]="{
+          'opacity-0': animationState,
+          'opacity-100': !animationState,
+        }"
+      >
+        <button
+          class="h-full w-full cursor-pointer bg-[url(/assets/SLO.png)] bg-cover shadow-2xl shadow-gray-600/30 transition-shadow duration-300 ease-in-out hover:shadow-gray-600"
+          (click)="chooseLanguage('sl-SI')"
+        ></button>
+      </div>
+    </div>
     <div
       class="h-full w-1/2 bg-[url(/assets/TestFacciata.svg)] bg-[length:200%_100%] bg-right bg-no-repeat"
       [ngClass]="{
-        'origin-right -rotate-y-180 slow-rotate perspective-midrange':
+        'slow-rotate origin-right -rotate-y-180 perspective-midrange':
           animationState,
       }"
     >
-    <button class="relative top-2/3 left-3/4 bg-[url(/assets/ITA.png)] bg-cover z-10 w-52 h-32 -translate-x-full" (click)="chooseLanguage('it-IT')"></button>
-  </div>
+      <div
+        class="relative top-2/3 left-3/4 z-10 h-12 w-24 md:w-64 md:h-32 -translate-x-full transition-opacity duration-500"
+        [ngClass]="{
+          'opacity-0': animationState,
+          'opacity-100': !animationState,
+        }"
+      >
+        <button
+          class="h-full w-full cursor-pointer bg-[url(/assets/ITA.png)] bg-cover shadow-2xl shadow-gray-600/30 transition-shadow duration-300 ease-in-out hover:shadow-gray-600"
+          (click)="chooseLanguage('it-IT')"
+        ></button>
+      </div>
+    </div>
   </div>
   <div class="h-full w-full">
-    <div
-      class="flex h-full w-full items-center justify-center"
-    >
+    <div class="flex h-full w-full items-center justify-center">
       <div
-        class="text-center transition-opacity duration-3000"
+        class="text-center transition-opacity delay-500 duration-3000"
         [ngClass]="{ 'opacity-0': !showContent, 'opacity-100': showContent }"
       >
         <h1>{{ "LANDING.TITLE" | translate }}</h1>
