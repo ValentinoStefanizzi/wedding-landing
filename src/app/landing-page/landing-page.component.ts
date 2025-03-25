@@ -20,7 +20,12 @@ export class LandingPageComponent {
 
   translationService = inject(TranslationService);
 
-  startAnimation() {
+  chooseLanguage(language: string) {
+    this.translationService.useLanguage(language);
+    this.startAnimation();
+  }
+
+  private startAnimation() {
     this.animationState = true;
     setTimeout(() => {
       this.showOverlay = false;

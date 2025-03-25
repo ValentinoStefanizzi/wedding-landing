@@ -1,8 +1,7 @@
 <div class="h-full w-full">
   <div
-    class="absolute inset-0 z-10 flex h-full w-full overflow-x-hidden"
+    class="absolute inset-0 flex h-full w-full overflow-x-hidden"
     *ngIf="showOverlay"
-    (click)="startAnimation()"
   >
     <div
       class="h-full w-1/2 bg-[url(/assets/TestFacciata.svg)] bg-[length:200%_100%] bg-left bg-no-repeat"
@@ -10,14 +9,18 @@
         'origin-left rotate-y-180 slow-rotate perspective-midrange':
           animationState,
       }"
-    ></div>
+    >
+    <button class="relative top-2/3 left-1/4 bg-[url(/assets/SLO.png)] bg-cover z-10 w-52 h-32" (click)="chooseLanguage('sl-SI')"></button>
+  </div>
     <div
       class="h-full w-1/2 bg-[url(/assets/TestFacciata.svg)] bg-[length:200%_100%] bg-right bg-no-repeat"
       [ngClass]="{
         'origin-right -rotate-y-180 slow-rotate perspective-midrange':
           animationState,
       }"
-    ></div>
+    >
+    <button class="relative top-2/3 left-3/4 bg-[url(/assets/ITA.png)] bg-cover z-10 w-52 h-32 -translate-x-full" (click)="chooseLanguage('it-IT')"></button>
+  </div>
   </div>
   <div class="h-full w-full">
     <div
