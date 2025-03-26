@@ -2,8 +2,8 @@
 
 @theme {
   --color-header: #f8f9fa;
-  --color-primary: #b0c794;
-  --color-bermuda: #78dcca;
+  --color-primary: #9dbe7a;
+  --color-background: #CCE3B0;
 }
 
 html, body, app-root {
