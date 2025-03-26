@@ -45,12 +45,12 @@
     </div>
   </div>
   <div
-    class="h-full w-full transition-opacity delay-500 duration-3000 bg-background/55"
+    class="h-full w-full bg-background/55 transition-opacity delay-500 duration-3000"
     [ngClass]="{ 'opacity-0': !showContent, 'opacity-100': showContent }"
   >
     <div class="grid h-full w-full grid-flow-row grid-cols-5 grid-rows-3">
       <div
-        class="col-span-2 flex h-full w-full items-center justify-center border"
+        class="col-span-3 md:col-span-2 flex h-full w-full items-center justify-center border"
       >
         <div class="relative h-[100%] w-[100%] md:w-[90%]">
           <div
@@ -65,7 +65,7 @@
           ></div>
         </div>
       </div>
-      <div class="col-span-3 h-full w-full border"></div>
+      <div class="col-span-2 md:col-span-3 h-full w-full border"></div>
       <div class="col-span-3 h-full w-full border"></div>
       <div class="col-span-2 h-full w-full border"></div>
       <div class="col-span-1 h-full w-full border"></div>
