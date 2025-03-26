@@ -6,7 +6,8 @@ import { GiftPageComponent } from './gift-page/gift-page.component';
 import { AnimationTestPageComponent } from './animation-test-page/animation-test-page.component';
 
 export const routes: Routes = [
-  { path: '', component: LandingPageComponent },
+  { path: '', redirectTo: '/landing', pathMatch: 'full' },
+  { path: 'landing', component: LandingPageComponent },
   { path: 'info', component: InfoPageComponent },
   { path: 'gift', component: GiftPageComponent },
   { path: 'test', component: AnimationTestPageComponent }
