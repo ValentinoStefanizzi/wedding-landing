@@ -4,9 +4,85 @@
   --color-header: #f8f9fa;
   --color-primary: #9dbe7a;
   --color-background: #CCE3B0;
+
+  --font-cormorant-light: 'CormorantGaramond Light';
+  --font-cormorant-regular: 'CormorantGaramond Regular';
+  --font-cormorant-medium: 'CormorantGaramond Medium';
+  --font-cormorant-semibold: 'CormorantGaramond SemiBold';
+  --font-cormorant-bold: 'CormorantGaramond Bold';
 }
 
 html, body, app-root {
   width:100%; 
   height:100%;
 }
+
+/* FONT REGISTRATION */
+@font-face {
+  font-family: 'CormorantGaramond Light';
+  src: url('assets/fonts/CormorandGaramond/CormorantGaramond-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond Regular';
+  src: url('assets/fonts/CormorandGaramond/CormorantGaramond-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond Medium';
+  src: url('assets/fonts/CormorandGaramond/CormorantGaramond-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond SemiBold';
+  src: url('assets/fonts/CormorandGaramond/CormorantGaramond-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond Bold';
+  src: url('assets/fonts/CormorandGaramond/CormorantGaramond-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* 
+
+body {
+  font-family: var(--font-regular);
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+}
+
+h5 {
+  font-size: var(--h5-size);
+}
+
+h6 {
+  font-size: var(--h6-size);
+}
+
+p {
+  font-size: var(--paragraph-size);
+} */
