@@ -2,9 +2,9 @@
   "LANDING": {
     "WELCOME_1": "Benvenuti!",
     "WELCOME_2": "In questo sito troverete le informazioni di cui avete bisogno per partecipare al nostro matrimonio.",
-    "WELCOME_INFO": "Nella sezione INFO avrete un riepilogo di dove e quando si terranno la cerimonia e il ricevimento.",
-    "WELCOME_GIFT": "Nella pagina REGALI potrete trovare le informazioni del nostro viaggio di nozze e come fare per contribuire con un regalo.",
-    "WELCOME_THANKS": "Grazie ancora per rendere il nostro giorno ancora più speciale!",
+    "WELCOME_INFO": "Nella sezione <span class=\"font-tangerine-regular text-2xl/0\">info</span> avrete un riepilogo di dove e quando si terranno la cerimonia e il ricevimento.",
+    "WELCOME_GIFT": "Nella pagina <span class=\"font-tangerine-regular text-2xl/0\">regali</span> potrete trovare le informazioni del nostro viaggio di nozze e come fare per contribuire con un regalo.",
+    "WELCOME_THANKS": "<span class=\"font-tangerine-regular text-2xl/0\">Grazie</span> ancora per rendere il nostro giorno ancora più speciale!",
     "COUNTER_DAYS": "Giorni",
     "COUNTER_HOURS": "Ore",
     "COUNTER_MINUTES": "Minuti"

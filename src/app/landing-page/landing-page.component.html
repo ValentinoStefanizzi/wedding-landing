@@ -83,7 +83,7 @@
         </div>
       </div>
       <div
-        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-0.5 pr-2 -ml-2 font-cormorant-medium text-center text-sm/tight md:col-span-3"
+        class="col-span-2 -ml-2 flex h-full w-full flex-col items-center justify-center space-y-0.5 pr-2 text-center font-cormorant-medium text-sm/tight md:col-span-3"
       >
         <p class="font-tangerine-bold text-3xl">
           {{ "LANDING.WELCOME_1" | translate }}
@@ -93,11 +93,9 @@
         </p>
       </div>
       <div
-        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-1 pl-2 -mr-2 text-center font-cormorant-medium text-sm/tight md:col-span-3"
+        class="col-span-2 -mr-2 flex h-full w-full flex-col items-center justify-center space-y-1 pl-2 text-center font-cormorant-medium text-sm/tight md:col-span-3"
       >
-        <p>
-          {{ "LANDING.WELCOME_INFO" | translate }}
-        </p>
+        <p [innerHTML]="'LANDING.WELCOME_INFO' | translate"></p>
       </div>
       <div
         class="col-span-4 flex h-full w-full items-center justify-center md:col-span-3"
@@ -166,18 +164,14 @@
         </div>
       </div>
       <div
-        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-1 pr-2 -ml-2 text-center font-cormorant-medium text-sm/tight md:col-span-3"
+        class="col-span-2 -ml-2 flex h-full w-full flex-col items-center justify-center space-y-1 pr-2 text-center font-cormorant-medium text-sm/tight md:col-span-3"
       >
-        <p>
-          {{ "LANDING.WELCOME_GIFT" | translate }}
-        </p>
+        <p [innerHTML]="'LANDING.WELCOME_GIFT' | translate"></p>
       </div>
       <div
-        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-1 pl-2 -mr-2 text-center font-cormorant-medium text-base/tight md:col-span-3"
+        class="col-span-2 -mr-2 flex h-full w-full flex-col items-center justify-center space-y-1 pl-2 text-center font-cormorant-medium text-base/tight md:col-span-3"
       >
-        <p>
-          {{ "LANDING.WELCOME_THANKS" | translate }}
-        </p>
+        <p [innerHTML]="'LANDING.WELCOME_THANKS' | translate"></p>
       </div>
       <div
         class="col-span-4 flex h-full w-full flex-col items-center justify-center gap-4 md:col-span-3"
