@@ -4,45 +4,35 @@
     *ngIf="showOverlay"
   >
     <div
-      class="h-full w-1/2 bg-[url(/assets/Facciata.svg)] bg-[length:200%_100%] bg-left bg-no-repeat"
+      class="absolute top-[85%] left-[45%] z-10 flex h-24 w-40 justify-between gap-4 transition-opacity duration-800 md:h-48 md:w-80"
+      [ngClass]="{
+        'opacity-0': animationState,
+        'opacity-100': !animationState,
+      }"
+    >
+      <button
+        class="h-1/2 w-1/2 cursor-pointer bg-[url(/assets/SLO.png)] bg-cover shadow-2xl shadow-gray-600 transition-shadow duration-300 ease-in-out hover:shadow-gray-900"
+        (click)="chooseLanguage('sl-SI')"
+      ></button>
+      <button
+        class="h-1/2 w-1/2 cursor-pointer bg-[url(/assets/ITA.png)] bg-cover shadow-2xl shadow-gray-600 transition-shadow duration-300 ease-in-out hover:shadow-gray-900"
+        (click)="chooseLanguage('it-IT')"
+      ></button>
+    </div>
+    <div
+      class="h-full w-1/2 bg-[url(/assets/OverlayMobile.svg)] bg-[length:200%_100%] bg-left bg-no-repeat md:bg-[url(/assets/Overlay.svg)]"
       [ngClass]="{
         'slow-rotate origin-left rotate-y-180 perspective-midrange':
           animationState,
       }"
-    >
-      <div
-        class="relative top-2/3 left-2/5 z-10 h-16 w-24 transition-opacity duration-800 md:h-32 md:w-48"
-        [ngClass]="{
-          'opacity-0': animationState,
-          'opacity-100': !animationState,
-        }"
-      >
-        <button
-          class="h-full w-full cursor-pointer bg-[url(/assets/SLO.png)] bg-cover shadow-2xl shadow-gray-600 transition-shadow duration-300 ease-in-out hover:shadow-gray-900"
-          (click)="chooseLanguage('sl-SI')"
-        ></button>
-      </div>
-    </div>
+    ></div>
     <div
-      class="h-full w-1/2 bg-[url(/assets/Facciata.svg)] bg-[length:200%_100%] bg-right bg-no-repeat"
+      class="h-full w-1/2 bg-[url(/assets/OverlayMobile.svg)] bg-[length:200%_100%] bg-right bg-no-repeat md:bg-[url(/assets/Overlay.svg)]"
       [ngClass]="{
         'slow-rotate origin-right -rotate-y-180 perspective-midrange':
           animationState,
       }"
-    >
-      <div
-        class="relative top-2/3 left-3/5 z-10 h-16 w-24 -translate-x-full transition-opacity duration-800 md:h-32 md:w-48"
-        [ngClass]="{
-          'opacity-0': animationState,
-          'opacity-100': !animationState,
-        }"
-      >
-        <button
-          class="h-full w-full cursor-pointer bg-[url(/assets/ITA.png)] bg-cover shadow-2xl shadow-gray-600 transition-shadow duration-300 ease-in-out hover:shadow-gray-900"
-          (click)="chooseLanguage('it-IT')"
-        ></button>
-      </div>
-    </div>
+    ></div>
   </div>
   <div
     class="h-[125%] w-full bg-background/55 transition-opacity delay-500 duration-3000 md:h-[150%] xl:h-[200%]"

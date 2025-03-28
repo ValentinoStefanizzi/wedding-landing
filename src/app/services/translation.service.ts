@@ -1,9 +1,11 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class TranslationService {
+  private currentLangSignal = signal<string>('en-US'); // Default language
+
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['it-IT', 'sl-SI']);
     this.translate.setDefaultLang('it-IT');
@@ -11,6 +13,7 @@ export class TranslationService {
 
   useLanguage(lang: string): void {
     this.translate.use(lang);
+    this.setCurrentLang(lang);
   }
 
   getTranslation(key: string, params?: any): string {
@@ -21,8 +24,16 @@ export class TranslationService {
     return this.translate.get(key, params);
   }
 
+  getCurrentLangSignal() {
+    return this.currentLangSignal.asReadonly();
+  }
+
   getCurrentLang(): string {
-    return this.translate.currentLang;
+    return this.currentLangSignal();
+  }
+
+  setCurrentLang(lang: string): void {
+    this.currentLangSignal.set(lang);
   }
 
   getDefaultLang(): string {
@@ -32,4 +43,4 @@ export class TranslationService {
   getAvailableLanguages(): string[] {
     return this.translate.getLangs();
   }
-} 
+}

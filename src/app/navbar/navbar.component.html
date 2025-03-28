@@ -1,0 +1,73 @@
+<nav
+  class="fixed top-15 left-88 z-50 -translate-x-1/2 -translate-y-1/2 transform"
+>
+  <ul class="relative flex flex-col items-center">
+    <li>
+      <button
+        (click)="toggleMenu()"
+        class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg focus:outline-none"
+      >
+        <img src="/assets/Menu.svg" alt="Menu" class="h-12 w-12" />
+      </button>
+    </li>
+    <li class="relative mt-2">
+      <ul
+        class="absolute left-1/2 flex -translate-x-1/2 transform flex-col items-center space-y-2 overflow-hidden transition-[max-height] duration-500 ease-in-out"
+        [class.max-h-0]="!isMenuOpen"
+        [class.max-h-100]="isMenuOpen"
+      >
+        <li
+          class="-translate-y-4 transform opacity-0 transition-all duration-500 ease-out"
+          [class.opacity-100]="isMenuOpen"
+          [class.translate-y-0]="isMenuOpen"
+        >
+          <a
+            href="/info"
+            class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+          >
+            <img src="/assets/MenuInfo.svg" alt="Info" class="h-12 w-12" />
+          </a>
+        </li>
+        <li
+          class="-translate-y-4 transform opacity-0 transition-all delay-150 duration-500 ease-out"
+          [class.opacity-100]="isMenuOpen"
+          [class.translate-y-0]="isMenuOpen"
+        >
+          <a
+            href="/gift"
+            class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+          >
+            <img src="/assets/MenuGift.svg" alt="Gift" class="h-12 w-12" />
+          </a>
+        </li>
+        @if(currentLanguage === 'si-SI') {
+        <li
+          class="-translate-y-4 transform opacity-0 transition-all delay-300 duration-500 ease-out"
+          [class.opacity-100]="isMenuOpen"
+          [class.translate-y-0]="isMenuOpen"
+        >
+          <a
+            href="#"
+            class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+          >
+            <img src="/assets/ITA.png" alt="Ita" class="h-12 w-12" />
+          </a>
+        </li>
+      } @else {
+        <li
+          class="-translate-y-4 transform opacity-0 transition-all delay-300 duration-500 ease-out"
+          [class.opacity-100]="isMenuOpen"
+          [class.translate-y-0]="isMenuOpen"
+        >
+          <a
+            href="#"
+            class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+          >
+            <img src="/assets/SLO.png" alt="Slo" class="h-12 w-12" />
+          </a>
+        </li>
+      }
+      </ul>
+    </li>
+  </ul>
+</nav>
