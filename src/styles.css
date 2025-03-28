@@ -10,9 +10,12 @@
   --font-cormorant-medium: 'CormorantGaramond Medium';
   --font-cormorant-semibold: 'CormorantGaramond SemiBold';
   --font-cormorant-bold: 'CormorantGaramond Bold';
+
+  --font-tangerine-regular: 'Tangerine Regular';
+  --font-tangerine-bold: 'Tangerine Bold';
 }
 
-html, body, app-root {
+html, body, app-root, app-navbar {
   width:100%; 
   height:100%;
 }
@@ -49,6 +52,20 @@ html, body, app-root {
 @font-face {
   font-family: 'CormorantGaramond Bold';
   src: url('assets/fonts/CormorandGaramond/CormorantGaramond-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Tangerine Regular';
+  src: url('assets/fonts/Tangerine/Tangerine-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Tangerine Bold';
+  src: url('assets/fonts/Tangerine/Tangerine-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: 700;
 }

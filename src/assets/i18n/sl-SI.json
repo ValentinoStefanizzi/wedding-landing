@@ -1,7 +1,13 @@
 {
   "LANDING": {
-    "TITLE": "Dobrodošli na najini poroki!",
-    "SUBTITLE": "Hvala, ker ste danes z nami na ta poseben dan."
+    "WELCOME_1": "Dobrodošli!",
+    "WELCOME_2": "Na tej strani boste našli vse informacije, ki jih potrebujete za udeležbo na najini poroki.",
+    "WELCOME_INFO": "V razdelku INFO boste našli povzetek, kje in kdaj bosta potekala slovesnost in sprejem.",
+    "WELCOME_GIFT": "Na strani DARILA boste našli informacije o najinem poročnem potovanju in kako prispevati z darilom.",
+    "WELCOME_THANKS": "Hvala, ker ste najin dan naredili še bolj poseben!",
+    "COUNTER_DAYS": "Dni",
+    "COUNTER_HOURS": "Ure",
+    "COUNTER_MINUTES": "Minute"
   },
   "INFO": {
     "TITLE": "Informacije",
@@ -11,6 +17,6 @@
   },
   "GIFT": {
     "TITLE": "Darila",
-    "SUBTITLE": "Če nam želite podariti darilo, lahko to storite tukaj."
+    "SUBTITLE": "Če nama želite podariti darilo, lahko to storite tukaj."
   }
 }

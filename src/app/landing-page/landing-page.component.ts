@@ -23,7 +23,7 @@ export class LandingPageComponent {
 
 
   getSecondsToDate(): number {
-    const futureDate = new Date('2025-05-31T01:00:00');
+    const futureDate = new Date('2025-05-31T15:00:00');
     const currentDate = new Date();
     return Math.floor((futureDate.getTime() - currentDate.getTime()) / 1000);
   }

@@ -50,7 +50,7 @@
   >
     <div class="grid h-full w-full grid-flow-row grid-cols-6 grid-rows-4">
       <div
-        class="col-span-4 flex h-full w-full items-center justify-center border md:col-span-3"
+        class="col-span-4 flex h-full w-full items-center justify-center md:col-span-3"
       >
         <div class="relative h-[100%] w-[100%]">
           <div
@@ -83,73 +83,104 @@
         </div>
       </div>
       <div
-        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-0.5 border text-center font-cormorant-medium text-sm/tight md:col-span-3"
+        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-0.5 pr-2 -ml-2 font-cormorant-medium text-center text-sm/tight md:col-span-3"
       >
-        <p>
+        <p class="font-tangerine-bold text-3xl">
           {{ "LANDING.WELCOME_1" | translate }}
         </p>
         <p>
           {{ "LANDING.WELCOME_2" | translate }}
         </p>
-        <p>
-          {{ "LANDING.WELCOME_3" | translate }}
-        </p>
       </div>
       <div
-        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-1 border text-center font-cormorant-medium text-base/tight md:col-span-3"
+        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-1 pl-2 -mr-2 text-center font-cormorant-medium text-sm/tight md:col-span-3"
       >
         <p>
           {{ "LANDING.WELCOME_INFO" | translate }}
         </p>
       </div>
       <div
-        class="col-span-4 flex h-full w-full items-center justify-center border md:col-span-3"
+        class="col-span-4 flex h-full w-full items-center justify-center md:col-span-3"
       >
         <div class="relative h-[100%] w-[100%]">
           <div
-            class="absolute inset-0 top-1/2 aspect-square translate-y-[-50%] scale-85 bg-[url(/assets/MatrimonioPietro.jpeg)] bg-[length:125%] bg-[30%] md:scale-100 xl:scale-90 2xl:scale-80"
+            class="absolute inset-0 top-1/2 aspect-square translate-y-[-50%] scale-85 bg-[url(/assets/MatrimonioPietro.jpeg)] bg-[length:135%] bg-[35%_45%] md:scale-100 xl:scale-90 2xl:scale-80"
             style="
-              mask-image: radial-gradient(
-                circle,
-                rgba(0, 0, 0, 1) 60%,
-                rgba(0, 0, 0, 0) 70%
-              );
+              mask-image:
+                linear-gradient(
+                  to top,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 1) 10%
+                ),
+                linear-gradient(
+                  to bottom,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 1) 10%
+                ),
+                linear-gradient(
+                  to left,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 1) 10%
+                ),
+                linear-gradient(
+                  to right,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 1) 10%
+                );
+              mask-composite: intersect;
             "
           ></div>
         </div>
       </div>
       <div
-        class="col-span-4 flex h-full w-full items-center justify-center border md:col-span-3"
+        class="col-span-4 flex h-full w-full items-center justify-center md:col-span-3"
       >
         <div class="relative h-[100%] w-[100%]">
           <div
-            class="absolute inset-0 top-1/2 aspect-square translate-y-[-50%] scale-100 bg-[url(/assets/Noi.jpeg)] bg-cover bg-[70%] md:scale-100 xl:scale-90 2xl:scale-80"
+            class="absolute inset-0 top-1/2 aspect-square translate-y-[-50%] scale-85 bg-[url(/assets/Noi.jpeg)] bg-cover bg-[70%] md:scale-100 xl:scale-90 2xl:scale-80"
             style="
-              -webkit-mask-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'><path fill='black' d='M100 180S10 100 10 50a45 45 0 0 1 90 0 45 45 0 0 1 90 0c0 50-90 130-90 130z'/></svg>&quot;);
-              mask-image: url(&quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 180'><path fill='black' d='M100 180S10 100 10 50a45 45 0 0 1 90 0 45 45 0 0 1 90 0c0 50-90 130-90 130z'/></svg>&quot;);
-              mask-repeat: no-repeat;
-              mask-position: center;
-              mask-size: contain;
+              mask-image:
+                linear-gradient(
+                  to top,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 1) 10%
+                ),
+                linear-gradient(
+                  to bottom,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 1) 10%
+                ),
+                linear-gradient(
+                  to left,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 1) 10%
+                ),
+                linear-gradient(
+                  to right,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 1) 10%
+                );
+              mask-composite: intersect;
             "
           ></div>
         </div>
       </div>
       <div
-        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-1 border text-center font-cormorant-medium text-base/tight md:col-span-3"
+        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-1 pr-2 -ml-2 text-center font-cormorant-medium text-sm/tight md:col-span-3"
       >
         <p>
           {{ "LANDING.WELCOME_GIFT" | translate }}
         </p>
       </div>
       <div
-        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-1 border text-center font-cormorant-medium text-base/tight md:col-span-3"
+        class="col-span-2 flex h-full w-full flex-col items-center justify-center space-y-1 pl-2 -mr-2 text-center font-cormorant-medium text-base/tight md:col-span-3"
       >
         <p>
           {{ "LANDING.WELCOME_THANKS" | translate }}
         </p>
       </div>
       <div
-        class="col-span-4 flex h-full w-full items-center justify-center flex-col gap-4 border md:col-span-3"
+        class="col-span-4 flex h-full w-full flex-col items-center justify-center gap-4 md:col-span-3"
       >
         <div
           class="h-20 w-20 bg-[url(/assets/Calendario.svg)] bg-no-repeat text-primary"
