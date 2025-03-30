@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class TranslationService {
-  private currentLangSignal = signal<string>('en-US'); // Default language
+  currentLangSignal = signal<string>('it-IT');
 
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['it-IT', 'sl-SI']);
@@ -13,7 +13,7 @@ export class TranslationService {
 
   useLanguage(lang: string): void {
     this.translate.use(lang);
-    this.setCurrentLang(lang);
+    this.currentLangSignal.set(lang);
   }
 
   getTranslation(key: string, params?: any): string {
@@ -24,16 +24,8 @@ export class TranslationService {
     return this.translate.get(key, params);
   }
 
-  getCurrentLangSignal() {
-    return this.currentLangSignal.asReadonly();
-  }
-
   getCurrentLang(): string {
-    return this.currentLangSignal();
-  }
-
-  setCurrentLang(lang: string): void {
-    this.currentLangSignal.set(lang);
+    return this.translate.currentLang;
   }
 
   getDefaultLang(): string {

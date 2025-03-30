@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { NavbarComponent } from "../navbar/navbar.component";
 
 @Component({
   selector: 'app-gift-page',
@@ -12,6 +13,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
         animate('1s', style({ opacity: 1 }))
       ])
     ])
-  ]
+  ],
+  imports: [NavbarComponent]
 })
 export class GiftPageComponent { }

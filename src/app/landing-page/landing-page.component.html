@@ -1,3 +1,10 @@
+<app-navbar
+  class="transition-opacity delay-2000 duration-500"
+  [ngClass]="{
+    'opacity-0': !showContent,
+    'opacity-100': showContent,
+  }"
+></app-navbar>
 <div class="h-full w-full" [class.overflow-y-hidden]="showOverlay">
   <div
     class="absolute inset-0 flex h-full w-full overflow-x-hidden"

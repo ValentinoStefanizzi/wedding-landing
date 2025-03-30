@@ -4,6 +4,7 @@ import { TranslationService } from '../services/translation.service';
 import { CommonModule } from '@angular/common';
 import { CountdownConfig, CountdownModule } from 'ngx-countdown';
 import { count } from 'rxjs';
+import { NavbarComponent } from "../navbar/navbar.component";
 
 @Component({
   selector: 'app-landing-page',
@@ -12,8 +13,9 @@ import { count } from 'rxjs';
   imports: [
     TranslatePipe,
     CommonModule,
-    CountdownModule
-  ]
+    CountdownModule,
+    NavbarComponent
+]
 })
 
 export class LandingPageComponent {

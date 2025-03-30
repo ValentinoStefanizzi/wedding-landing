@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { ActivatedRoute } from '@angular/router';
+import { NavbarComponent } from "../navbar/navbar.component";
 
 @Component({
   selector: 'app-info-page',
@@ -13,7 +14,8 @@ import { ActivatedRoute } from '@angular/router';
         animate('0.5s', style({ transform: 'translateX(0)' }))
       ])
     ])
-  ]
+  ],
+  imports: [NavbarComponent]
 })
 export class InfoPageComponent implements OnInit {
   variant: string = '';

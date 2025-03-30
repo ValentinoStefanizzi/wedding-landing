@@ -10,8 +10,6 @@ import { TranslationService } from './services/translation.service';
   standalone: false
 })
 export class AppComponent {
-  title = 'wedding-landing';
-
   translateService = inject(TranslateService);
   translationService = inject(TranslationService);
 

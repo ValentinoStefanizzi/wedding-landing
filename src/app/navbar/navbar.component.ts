@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, inject } from '@angular/core';
-import { TranslatePipe } from '@ngx-translate/core';
+import { Component, computed, inject } from '@angular/core';
 import { TranslationService } from '../services/translation.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -15,12 +15,20 @@ export class NavbarComponent {
   isMenuOpen = false;
 
   translationService = inject(TranslationService);
-
-  get currentLanguage() {
-    return this.translationService.getCurrentLang();
-  }
+  router = inject(Router);
+  currentLang = computed(() => this.translationService.currentLangSignal());
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  selectLanguage(lang: string) {
+    this.toggleMenu();
+    this.translationService.useLanguage(lang);
+  }
+
+  changeRoute(route: string) {
+    this.toggleMenu();
+    this.router.navigate([route]);
   }
 }

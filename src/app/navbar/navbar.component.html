@@ -1,11 +1,11 @@
 <nav
   class="fixed top-15 left-88 z-50 -translate-x-1/2 -translate-y-1/2 transform"
 >
-  <ul class="relative flex flex-col items-center">
+  <ul class="relative flex flex-col items-center ">
     <li>
       <button
         (click)="toggleMenu()"
-        class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg focus:outline-none"
+        class="flex h-16 w-16 items-center justify-center rounded-full bg-primary  shadow-lg focus:outline-none"
       >
         <img src="/assets/Menu.svg" alt="Menu" class="h-12 w-12" />
       </button>
@@ -22,10 +22,10 @@
           [class.translate-y-0]="isMenuOpen"
         >
           <a
-            href="/info"
+            (click)="changeRoute('/landing')"
             class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
           >
-            <img src="/assets/MenuInfo.svg" alt="Info" class="h-12 w-12" />
+            <img src="/assets/MenuHome.svg" alt="Info" class="h-12 w-12" />
           </a>
         </li>
         <li
@@ -34,39 +34,59 @@
           [class.translate-y-0]="isMenuOpen"
         >
           <a
-            href="/gift"
+            (click)="changeRoute('/info')"
+            class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+          >
+            <img src="/assets/MenuInfo.svg" alt="Info" class="h-12 w-12" />
+          </a>
+        </li>
+        <li
+          class="-translate-y-4 transform opacity-0 transition-all delay-300 duration-500 ease-out"
+          [class.opacity-100]="isMenuOpen"
+          [class.translate-y-0]="isMenuOpen"
+        >
+          <a
+            (click)="changeRoute('/gift')"
             class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
           >
             <img src="/assets/MenuGift.svg" alt="Gift" class="h-12 w-12" />
           </a>
         </li>
-        @if(currentLanguage === 'si-SI') {
-        <li
-          class="-translate-y-4 transform opacity-0 transition-all delay-300 duration-500 ease-out"
-          [class.opacity-100]="isMenuOpen"
-          [class.translate-y-0]="isMenuOpen"
-        >
-          <a
-            href="#"
-            class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+        @if (currentLang() === "sl-SI") {
+          <li
+            class="-translate-y-4 transform opacity-0 transition-all delay-450 duration-500 ease-out"
+            [class.opacity-100]="isMenuOpen"
+            [class.translate-y-0]="isMenuOpen"
           >
-            <img src="/assets/ITA.png" alt="Ita" class="h-12 w-12" />
-          </a>
-        </li>
-      } @else {
-        <li
-          class="-translate-y-4 transform opacity-0 transition-all delay-300 duration-500 ease-out"
-          [class.opacity-100]="isMenuOpen"
-          [class.translate-y-0]="isMenuOpen"
-        >
-          <a
-            href="#"
-            class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+            <a
+              (click)="selectLanguage('it-IT')"
+              class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+            >
+              <img
+                src="/assets/ITA.png"
+                alt="Ita"
+                class="h-full w-full scale-90 rounded-full object-center"
+              />
+            </a>
+          </li>
+        } @else {
+          <li
+            class="-translate-y-4 transform opacity-0 transition-all delay-300 duration-500 ease-out"
+            [class.opacity-100]="isMenuOpen"
+            [class.translate-y-0]="isMenuOpen"
           >
-            <img src="/assets/SLO.png" alt="Slo" class="h-12 w-12" />
-          </a>
-        </li>
-      }
+            <a
+              (click)="selectLanguage('sl-SI')"
+              class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+            >
+              <img
+                src="/assets/SLO.png"
+                alt="Slo"
+                class="h-full w-full scale-90 rounded-full object-cover object-[20%]"
+              />
+            </a>
+          </li>
+        }
       </ul>
     </li>
   </ul>
