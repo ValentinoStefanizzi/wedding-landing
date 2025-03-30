@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { ActivatedRoute } from '@angular/router';
 import { NavbarComponent } from "../navbar/navbar.component";
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-info-page',
@@ -15,7 +16,10 @@ import { NavbarComponent } from "../navbar/navbar.component";
       ])
     ])
   ],
-  imports: [NavbarComponent]
+  imports: [
+    NavbarComponent,
+    TranslatePipe
+  ]
 })
 export class InfoPageComponent implements OnInit {
   variant: string = '';

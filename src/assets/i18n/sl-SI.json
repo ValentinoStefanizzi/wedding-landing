@@ -12,11 +12,32 @@
   "INFO": {
     "TITLE": "Informacije",
     "SUBTITLE": "Vse informacije, ki jih potrebujete za udeležbo na najini poroki.",
-    "DATE": "Datum",
-    "LOCATION": "Lokacija"
+    "CHURCH": {
+      "DESCRIPTION": "Maša bo v soboto, 31. maja, ob 14.00 v cerkvi sv. Martina v Doberdò del Lago.",
+      "IMAGE_ALT": "Cerkev Doberdò del Lago"
+    },
+    "RECEPTION": {
+      "DESCRIPTION_1": "Po slovesnosti se bo praznovanje nadaljevalo na",
+      "DESCRIPTION_2": "Posestvu Castelvecchio",
+      "ADDRESS": "Via Castelnuovo 2 (Sagrado).",
+      "IMAGE_ALT": "Posestvo Castelvecchio"
+    },
+    "RSVP": {
+      "CONFIRMATION": "Prosimo za potrditev udeležbe do 30. aprila 2025.",
+      "DIETARY": "Posebne prehranske zahteve (alergije/intolerance) sporočite neposredno mladoporočencema.",
+      "CONTACT_1": "Valentino Stefanizzi +39 340 705 7800",
+      "CONTACT_2": "Mateja Jarc +39 333 856 0337"
+    }
   },
   "GIFT": {
     "TITLE": "Darila",
-    "SUBTITLE": "Če nama želite podariti darilo, lahko to storite tukaj."
+    "SUBTITLE": "Če nama želite podariti darilo, lahko to storite tukaj.",
+    "DESCRIPTION_1": "Potovanje tisoč milj se vedno začne s prvim korakom…",
+    "DESCRIPTION_2": "Hvala vsem, ki boste pomagali uresničiti naše sanje.",
+    "IBAN": "IBAN: IT27 Q089 28646 3001 00000 51678",
+    "ACCOUNT_HOLDER": "Na ime: Valentino Stefanizzi in Mateja Jarc",
+    "PURPOSE": "Namen: Poroka darilo",
+    "IMAGE_ALT_1": "Slika letala",
+    "IMAGE_ALT_2": "Slika Japonske"
   }
 }

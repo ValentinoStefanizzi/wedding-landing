@@ -13,10 +13,33 @@
     "TITLE": "Informazioni",
     "SUBTITLE": "Tutte le informazioni di cui hai bisogno per partecipare al nostro matrimonio.",
     "DATE": "Data",
-    "LOCATION": "Luogo"
+    "LOCATION": "Luogo",
+    "CHURCH": {
+      "DESCRIPTION": "La messa si terrà sabato 31 maggio, alle 14.00 nella chiesa di San Martino a Doberdò del Lago.",
+      "IMAGE_ALT": "Chiesa di Doberdò del Lago"
+    },
+    "RECEPTION": {
+      "DESCRIPTION_1": "Dopo la cerimonia i festeggiamenti proseguiranno presso la",
+      "DESCRIPTION_2": "Tenuta Castelvecchio",
+      "ADDRESS": "Via Castelnuovo 2 (Sagrado).",
+      "IMAGE_ALT": "Tenuta Castelvecchio"
+    },
+    "RSVP": {
+      "CONFIRMATION": "É gradita gentile conferma entro il 30 aprile 2025.",
+      "DIETARY": "Specificare eventuali necessità alimentari (allergie/intolleranze) direttamente agli sposi.",
+      "CONTACT_1": "Valentino Stefanizzi +39 340 705 7800",
+      "CONTACT_2": "Mateja Jarc +39 333 856 0337"
+    }
   },
   "GIFT": {
     "TITLE": "Regali",
-    "SUBTITLE": "Se desideri farci un regalo, puoi farlo qui."
+    "SUBTITLE": "Se desideri farci un regalo, puoi farlo qui.",
+    "DESCRIPTION_1": "Un viaggio di mille miglia inizia sempre con il primo passo…",
+    "DESCRIPTION_2": "Grazie a chi vorrà mettere le ali al nostro sogno.",
+    "IBAN": "IBAN: IT27 Q089 28646 3001 00000 51678",
+    "ACCOUNT_HOLDER": "Intestato a: Valentino Stefanizzi e Mateja Jarc",
+    "PURPOSE": "Causale: Regalo di matrimonio",
+    "IMAGE_ALT_1": "Foto di un aereo",
+    "IMAGE_ALT_2": "Foto del Giappone"
   }
 }

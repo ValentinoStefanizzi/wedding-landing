@@ -1,5 +1,33 @@
 <app-navbar></app-navbar>
-<div @fadeIn>
-  <h2>Informazioni per il regalo</h2>
-  <p>Se desiderate farci un regalo, ecco alcune idee.</p>
+<div class="h-full w-full bg-secondary font-cormorant-garamond">
+  <div class="grid h-full w-full grid-flow-row grid-cols-6 grid-rows-4 gap-4 p-4">
+    <!-- Section: Gift Information -->
+    <div class="col-span-6 flex flex-col items-center justify-center space-y-4 text-center text-base/tight">
+      <p class="font-cormorand-regular">
+        {{ 'GIFT.DESCRIPTION_1' | translate }}
+      </p>
+      <p class="font-cormorand-regular">
+        {{ 'GIFT.DESCRIPTION_2' | translate }}
+      </p>
+      <p>
+        <strong>{{ 'GIFT.IBAN' | translate }}</strong>
+      </p>
+      <p>
+        <strong>{{ 'GIFT.ACCOUNT_HOLDER' | translate }}</strong>
+      </p>
+      <p>
+        <strong>{{ 'GIFT.PURPOSE' | translate }}</strong>
+      </p>
+    </div>
+    <!-- Section: Images -->
+    <div class="h-64 w-64 overflow-hidden relative group">
+      <div
+        class="h-full w-full bg-[url(/assets/Japan.svg)] bg-[length:100%] bg-center absolute top-0 left-0"
+        [attr.alt]="'GIFT.IMAGE_ALT_2' | translate"
+        (mousemove)="zoom($event)"
+        (mouseleave)="resetZoom($event)"
+        #zoomDiv
+      ></div>
+    </div>
+  </div>
 </div>
