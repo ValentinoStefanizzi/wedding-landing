@@ -23,14 +23,6 @@
       <div class="h-full w-full overflow-hidden zoom-container">
         <div
           class="relative h-full w-full bg-[url(/assets/Japan.svg)] bg-[length:80%] bg-center bg-no-repeat"
-          [attr.alt]="'GIFT.IMAGE_ALT_2' | translate"
-          (mousemove)="zoom($event)"
-          (mouseleave)="resetZoom($event)"
-          (wheel)="onZoom($event)"
-          (touchstart)="onTouchStart($event)"
-          (touchmove)="onTouchMove($event)"
-          (touchend)="onTouchEnd($event)"
-          #zoomDiv
         ></div>
       </div>
     </div>
