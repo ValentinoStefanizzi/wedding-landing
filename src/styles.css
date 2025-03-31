@@ -78,8 +78,3 @@ html, body, app-root, app-navbar {
     text-decoration-color: transparent;
   }
 }
-
-.zoom-container {
-  touch-action: pinch-zoom;
-  overflow: hidden;
-}
