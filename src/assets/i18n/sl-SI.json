@@ -35,6 +35,8 @@
     "IBAN": "Številka računa:",
     "IBAN_NUMBER": "IT27Q0892864630010000051678",
     "ACCOUNT_HOLDER": "<b>Prejemnik:</b><br/><i>Valentino Stefanizzi in Mateja Jarc</i>",
-    "PURPOSE": "<b>Namen:</b><br/><i>Poročno darilo</i>"
+    "PURPOSE": "<b>Namen:</b><br/><i>Poročno darilo</i>",
+    "COPY_SUCCESS": "IBAN uspešno kopiran!",
+    "COPY_ERROR": "Prišlo je do napake pri kopiranju IBAN-a."
   }
 }

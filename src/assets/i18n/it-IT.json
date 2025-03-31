@@ -35,6 +35,8 @@
     "IBAN": "IBAN:",
     "IBAN_NUMBER": "IT27Q0892864630010000051678",
     "ACCOUNT_HOLDER": "<b>Intestato a:</b><br/><i>Valentino Stefanizzi e Mateja Jarc</i>",
-    "PURPOSE": "<b>Causale:</b><br/><i>Regalo di matrimonio</i>"
+    "PURPOSE": "<b>Causale:</b><br/><i>Regalo di matrimonio</i>",
+    "COPY_SUCCESS":"IBAN Copiato con successo!",
+    "COPY_ERROR":"C'è stato un errore durante la copia dell'IBAN."
   }
 }

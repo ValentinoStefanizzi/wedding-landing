@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
-import { trigger, transition, style, animate } from '@angular/animations';
-import { NavbarComponent } from "../navbar/navbar.component";
+import { animate, style, transition, trigger } from '@angular/animations';
+import { Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
+import { NavbarComponent } from "../navbar/navbar.component";
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-gift-page',
@@ -17,16 +18,18 @@ import { TranslatePipe } from '@ngx-translate/core';
   ],
   imports: [NavbarComponent, TranslatePipe]
 })
-export class GiftPageComponent { 
+export class GiftPageComponent {
+  translationService = inject(TranslationService);
+
   zoom(event: MouseEvent) {
     if (this.isMobile()) return; // Prevent mouse events on mobile
     const zoomDiv = event.target as HTMLElement;
     const { offsetX, offsetY, target } = event;
     const { offsetWidth, offsetHeight } = target as HTMLElement;
-  
+
     const x = (offsetX / offsetWidth) * 100;
     const y = (offsetY / offsetHeight) * 100;
-  
+
     zoomDiv.style.backgroundPosition = `${x}% ${y}%`;
     zoomDiv.style.backgroundSize = `250%`;
   }
@@ -39,9 +42,9 @@ export class GiftPageComponent {
 
   copyToClipboard(text: string) {
     navigator.clipboard.writeText(text).then(() => {
-      alert('Copied to clipboard!');
+      alert(this.translationService.getTranslation('GIFT.COPY_SUCCESS'));
     }).catch(err => {
-      console.error('Failed to copy text: ', err);
+      console.error(this.translationService.getTranslation('GIFT.COPY_ERROR'), err);
     });
   }
 

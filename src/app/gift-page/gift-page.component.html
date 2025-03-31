@@ -20,9 +20,9 @@
       <div
         class="absolute z-10 h-24 w-32 scale-90 rounded-4xl bg-[url(/assets/JAP.png)] bg-cover bg-center bg-no-repeat"
       ></div>
-      <div class="h-full w-full overflow-hidden">
+      <div class="h-full w-full overflow-hidden zoom-container">
         <div
-          class="relative h-full w-full cursor-zoom-in rounded-4xl border border-gray-400/20 bg-[url(/assets/Japan.svg)] bg-[length:80%] bg-center bg-no-repeat"
+          class="relative h-full w-full rounded-4xl border border-gray-400/20 bg-[url(/assets/Japan.svg)] bg-[length:80%] bg-center bg-no-repeat"
           [attr.alt]="'GIFT.IMAGE_ALT_2' | translate"
           (mousemove)="zoom($event)"
           (mouseleave)="resetZoom($event)"
@@ -39,7 +39,7 @@
     <div class="row-span-1"></div>
     <!-- Section: Gift Information -->
     <div
-      class="col-span-6 row-span-3 flex flex-col items-center justify-center space-y-2 border border-gray-700/80 m-4 text-center font-cormorant-medium text-base/tight"
+      class="col-span-6 row-span-3 flex flex-col items-center justify-center space-y-2 border border-gray-700/80 m-[1.5vh] text-center font-cormorant-medium text-base/tight"
     >
       <div class="flex flex-col items-center justify-center">
         <p class="font-bold" [innerHTML]="'GIFT.IBAN' | translate"></p>
