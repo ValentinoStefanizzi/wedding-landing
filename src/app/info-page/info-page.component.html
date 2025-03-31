@@ -1,50 +1,68 @@
 <app-navbar></app-navbar>
-<div class="h-full w-full bg-secondary font-cormorant-garamond">
-  <div class="grid h-full w-full grid-flow-row grid-cols-6 grid-rows-4 gap-4 p-4">
-    <!-- Section: Church Information -->
-    <div class="col-span-6 flex flex-row items-center justify-center space-x-4 text-base/tight">
-      <div class="flex flex-col items-center justify-center space-y-2 text-center">
-        <p class="font-cormorand-regular">
-          {{ 'INFO.CHURCH.DESCRIPTION' | translate }}
-        </p>
-      </div>
-      <div
-        class="h-64 w-64 bg-[url(/assets/ChiesaDoberdò.jpg)] bg-cover bg-center"
-        [attr.alt]="'INFO.CHURCH.IMAGE_ALT' | translate"
-      ></div>
+<div class="font-cormorant-garamond h-full w-full bg-secondary">
+  <div
+    class="grid h-full w-full grid-flow-row grid-cols-6 grid-rows-12 gap-4 p-4"
+  >
+    <!-- Section: Intro -->
+    <div
+      class="col-span-6 row-span-2 flex flex-row items-center justify-center space-x-4 font-tangerine-bold text-5xl"
+    >
+      {{ "INFO.TITLE" | translate }}
     </div>
+    <!-- Section: Church Information -->
+    <div
+      class="col-span-3 row-span-3 flex flex-row items-center justify-center space-x-4 text-center font-cormorant-medium text-base/tight"
+    >
+      <p [innerHTML]="'INFO.CHURCH.DESCRIPTION' | translate"></p>
+    </div>
+    <div
+      class="col-span-3 row-span-3 bg-[url(/assets/ChiesaDoberdò.jpg)] bg-cover bg-center"
+      [attr.alt]="'INFO.CHURCH.IMAGE_ALT' | translate"
+    ></div>
     <!-- Section: Reception Information -->
-    <div class="col-span-6 flex flex-row items-center justify-center space-x-4 text-base/tight">
-      <div class="flex flex-col items-center justify-center space-y-2 text-center">
-        <p class="font-cormorand-regular">
-          {{ 'INFO.RECEPTION.DESCRIPTION_1' | translate }}
-        </p>
-        <p class="font-cormorand-regular">
-          {{ 'INFO.RECEPTION.DESCRIPTION_2' | translate }}
-        </p>
-        <p>
-          {{ 'INFO.RECEPTION.ADDRESS' | translate }}
-        </p>
-      </div>
-      <div
-        class="h-64 w-64 bg-[url(/assets/Castelvecchio.jpeg)] bg-cover bg-center"
-        [attr.alt]="'INFO.RECEPTION.IMAGE_ALT' | translate"
-      ></div>
+    <div
+      class="col-span-6 flex flex-row items-center justify-center space-x-4 pr-16 pl-16 text-center font-cormorant-medium text-base/tight"
+    >
+      {{ "INFO.RECEPTION.DESCRIPTION_1" | translate }}
+    </div>
+    <div
+      class="col-span-3 row-span-3 bg-[url(/assets/Castelvecchio.jpeg)] bg-cover bg-center"
+      [attr.alt]="'INFO.RECEPTION.IMAGE_ALT' | translate"
+    ></div>
+    <div
+      class="col-span-3 row-span-3 flex flex-col items-center justify-center space-x-4 text-base/tight"
+    >
+      <p
+        class="font-tangerine-regular text-2xl"
+        [innerHTML]="'INFO.RECEPTION.DESCRIPTION_2' | translate"
+      ></p>
+      <p
+        class="font-cormorant-medium text-base italic"
+        [innerHTML]="'INFO.RECEPTION.ADDRESS' | translate"
+      ></p>
     </div>
     <!-- Section: RSVP Information -->
-    <div class="col-span-6 flex flex-col items-center justify-center space-y-2 text-center text-base/tight">
-      <p class="font-cormorand-regular">
-        {{ 'INFO.RSVP.CONFIRMATION' | translate }}
-      </p>
-      <p>
-        {{ 'INFO.RSVP.DIETARY' | translate }}
-      </p>
-      <p>
-        {{ 'INFO.RSVP.CONTACT_1' | translate }}
-      </p>
-      <p>
-        {{ 'INFO.RSVP.CONTACT_2' | translate }}
-      </p>
+    <div
+      class="col-span-6 row-span-3 flex flex-col items-center justify-center space-y-2 text-center font-cormorant-medium text-base/tight"
+    >
+      <p [innerHTML]="'INFO.RSVP.CONFIRMATION' | translate"></p>
+      <p [innerHTML]="'INFO.RSVP.DIETARY' | translate"></p>
+      <div
+        class="flex flex-row items-center justify-center space-x-8 pt-3 text-base/tight"
+      >
+        <div
+          class="flex flex-col font-cormorant-bold"
+        >
+          <p class="italic" [innerHTML]="'INFO.RSVP.CONTACT_1' | translate"></p>
+          <p [innerHTML]="'INFO.RSVP.CONTACT_1_PHONE' | translate"></p>
+        </div>
+        <div
+          class="flex flex-col font-cormorant-bold"
+        >
+          <p class="italic" [innerHTML]="'INFO.RSVP.CONTACT_2' | translate"></p>
+          <p [innerHTML]="'INFO.RSVP.CONTACT_2_PHONE' | translate"></p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

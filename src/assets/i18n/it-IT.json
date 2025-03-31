@@ -10,35 +10,34 @@
     "COUNTER_MINUTES": "Minuti"
   },
   "INFO": {
-    "TITLE": "Informazioni",
-    "SUBTITLE": "Tutte le informazioni di cui hai bisogno per partecipare al nostro matrimonio.",
-    "DATE": "Data",
-    "LOCATION": "Luogo",
+    "TITLE": "Mateja & Valentino",
     "CHURCH": {
-      "DESCRIPTION": "La messa si terrà sabato 31 maggio, alle 14.00 nella chiesa di San Martino a Doberdò del Lago.",
+      "DESCRIPTION": "La messa si terrà <br/><b>sabato 31 maggio</b>, alle <b>14.00</b> nella chiesa di San Martino a <span class=\"font-tangerine-regular text-2xl/5\">Doberdò del Lago.</span>",
       "IMAGE_ALT": "Chiesa di Doberdò del Lago"
     },
     "RECEPTION": {
-      "DESCRIPTION_1": "Dopo la cerimonia i festeggiamenti proseguiranno presso la",
+      "DESCRIPTION_1": "Dopo la cerimonia i festeggiamenti proseguiranno presso:",
       "DESCRIPTION_2": "Tenuta Castelvecchio",
-      "ADDRESS": "Via Castelnuovo 2 (Sagrado).",
+      "ADDRESS": "Via Castelnuovo 2 (Sagrado)",
       "IMAGE_ALT": "Tenuta Castelvecchio"
     },
     "RSVP": {
-      "CONFIRMATION": "É gradita gentile conferma entro il 30 aprile 2025.",
+      "CONFIRMATION": "É gradita gentile conferma entro il <b>30 aprile 2025.</b>",
       "DIETARY": "Specificare eventuali necessità alimentari (allergie/intolleranze) direttamente agli sposi.",
-      "CONTACT_1": "Valentino Stefanizzi +39 340 705 7800",
-      "CONTACT_2": "Mateja Jarc +39 333 856 0337"
+      "CONTACT_1": "Valentino Stefanizzi",
+      "CONTACT_1_PHONE": "+39 340 705 7800",
+      "CONTACT_2": "Mateja Jarc",
+      "CONTACT_2_PHONE": "+39 333 856 0337"
     }
   },
   "GIFT": {
-    "TITLE": "Regali",
-    "SUBTITLE": "Se desideri farci un regalo, puoi farlo qui.",
+    "TITLE": "Mateja & Valentino",
     "DESCRIPTION_1": "Un viaggio di mille miglia inizia sempre con il primo passo…",
     "DESCRIPTION_2": "Grazie a chi vorrà mettere le ali al nostro sogno.",
-    "IBAN": "IBAN: IT27 Q089 28646 3001 00000 51678",
-    "ACCOUNT_HOLDER": "Intestato a: Valentino Stefanizzi e Mateja Jarc",
-    "PURPOSE": "Causale: Regalo di matrimonio",
+    "IBAN": "IBAN:",
+    "IBAN_NUMBER": "IT27 Q089 28646 3001 00000 51678",
+    "ACCOUNT_HOLDER": "<b>Intestato a:</b><br/><i>Valentino Stefanizzi e Mateja Jarc</i>",
+    "PURPOSE": "<b>Causale:</b><br/><i>Regalo di matrimonio</i>",
     "IMAGE_ALT_1": "Foto di un aereo",
     "IMAGE_ALT_2": "Foto del Giappone"
   }
