@@ -1,13 +1,13 @@
 <nav
-  class="fixed top-15 left-88 z-50 -translate-x-1/2 -translate-y-1/2 transform"
+  class="fixed top-[1%] left-[2%] z-50 transform"
 >
   <ul class="relative flex flex-col items-center ">
     <li>
       <button
         (click)="toggleMenu()"
-        class="flex h-16 w-16 items-center justify-center rounded-full bg-primary  shadow-lg focus:outline-none"
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-primary  shadow-lg focus:outline-none"
       >
-        <img src="/assets/Menu.svg" alt="Menu" class="h-12 w-12" />
+        <img src="/assets/Menu.svg" alt="Menu" class="h-10 w-10" />
       </button>
     </li>
     <li class="relative mt-2">
@@ -23,9 +23,9 @@
         >
           <a
             (click)="changeRoute('/landing')"
-            class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+            class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-lg"
           >
-            <img src="/assets/MenuHome.svg" alt="Info" class="h-12 w-12" />
+            <img src="/assets/MenuHome.svg" alt="Info" class="h-10 w-10" />
           </a>
         </li>
         <li
@@ -35,9 +35,9 @@
         >
           <a
             (click)="changeRoute('/info')"
-            class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+            class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-lg"
           >
-            <img src="/assets/MenuInfo.svg" alt="Info" class="h-12 w-12" />
+            <img src="/assets/MenuInfo.svg" alt="Info" class="h-10 w-10" />
           </a>
         </li>
         <li
@@ -47,9 +47,9 @@
         >
           <a
             (click)="changeRoute('/gift')"
-            class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+            class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-lg"
           >
-            <img src="/assets/MenuGift.svg" alt="Gift" class="h-12 w-12" />
+            <img src="/assets/MenuGift.svg" alt="Gift" class="h-10 w-10" />
           </a>
         </li>
         @if (currentLang() === "sl-SI") {
@@ -60,7 +60,7 @@
           >
             <a
               (click)="selectLanguage('it-IT')"
-              class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-lg"
             >
               <img
                 src="/assets/ITA.png"
@@ -77,7 +77,7 @@
           >
             <a
               (click)="selectLanguage('sl-SI')"
-              class="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-lg"
+              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-lg"
             >
               <img
                 src="/assets/SLO.png"

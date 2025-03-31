@@ -26,8 +26,6 @@
           [attr.alt]="'GIFT.IMAGE_ALT_2' | translate"
           (mousemove)="zoom($event)"
           (mouseleave)="resetZoom($event)"
-          (touchmove)="zoomTouch($event)"
-          (touchend)="resetZoom($event)"
           #zoomDiv
         ></div>
       </div>

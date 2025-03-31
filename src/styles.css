@@ -70,36 +70,10 @@ html, body, app-root, app-navbar {
   font-weight: 700;
 }
 
-/* 
-
-body {
-  font-family: var(--font-regular);
+@media (max-width: 768px) {
+  a, p {
+    text-decoration: none;
+    -webkit-text-decoration: none;
+    text-decoration-color: transparent;
+  }
 }
-
-h1 {
-  font-size: var(--h1-size);
-}
-
-h2 {
-  font-size: var(--h2-size);
-}
-
-h3 {
-  font-size: var(--h3-size);
-}
-
-h4 {
-  font-size: var(--h4-size);
-}
-
-h5 {
-  font-size: var(--h5-size);
-}
-
-h6 {
-  font-size: var(--h6-size);
-}
-
-p {
-  font-size: var(--paragraph-size);
-} */

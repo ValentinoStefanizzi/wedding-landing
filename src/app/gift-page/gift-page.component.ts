@@ -31,25 +31,7 @@ export class GiftPageComponent {
     zoomDiv.style.backgroundSize = `250%`;
   }
 
-  zoomTouch(event: TouchEvent) {
-    if (!this.isMobile()) return; // Prevent touch events on desktop
-    const zoomDiv = event.target as HTMLElement;
-    const touch = event.touches[0];
-    const target = event.target as HTMLElement;
-    const rect = target.getBoundingClientRect();
-
-    const offsetX = touch.clientX - rect.left;
-    const offsetY = touch.clientY - rect.top;
-    const { offsetWidth, offsetHeight } = target;
-
-    const x = (offsetX / offsetWidth) * 100;
-    const y = (offsetY / offsetHeight) * 100;
-
-    zoomDiv.style.backgroundPosition = `${x}% ${y}%`;
-    zoomDiv.style.backgroundSize = `250%`;
-  }
-
-  resetZoom(event: MouseEvent | TouchEvent) {
+  resetZoom(event: MouseEvent) {
     const zoomDiv = event.target as HTMLElement;
     zoomDiv.style.backgroundPosition = `center`;
     zoomDiv.style.backgroundSize = `100%`;
