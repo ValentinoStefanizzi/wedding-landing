@@ -1,43 +1,40 @@
 {
   "LANDING": {
     "WELCOME_1": "Dobrodošli!",
-    "WELCOME_2": "Na tej strani boste našli vse informacije, ki jih potrebujete za udeležbo na najini poroki.",
-    "WELCOME_INFO": "V razdelku <span class=\"font-tangerine-regular text-2xl/0\">info</span> boste našli povzetek, kje in kdaj bosta potekala slovesnost in sprejem.",
-    "WELCOME_GIFT": "Na strani <span class=\"font-tangerine-regular text-2xl/0\">darila</span> boste našli informacije o najinem poročnem potovanju in kako prispevati z darilom.",
-    "WELCOME_THANKS": "<span class=\"font-tangerine-regular text-2xl/0\">Hvala</span>, ker ste najin dan naredili še bolj poseben!",
+    "WELCOME_2": "Na spletni strani boste našli vse informacije v povezavi z najino poroko.",
+    "WELCOME_INFO": "V razdelku <span class=\"font-tangerine-regular text-2xl/0\">info</span> boste našli podrobnejše informacije o obredu in poročnem slavju.",
+    "WELCOME_GIFT": "Na strani <span class=\"font-tangerine-regular text-2xl/0\">darila</span> boste našli informacije o najinem poročnem potovanju in kako zanj prispevati.",
+    "WELCOME_THANKS": "<span class=\"font-tangerine-regular text-2xl/0\">Hvala</span>, da z nami delite najin poročni dan!",
     "COUNTER_DAYS": "Dni",
     "COUNTER_HOURS": "Ure",
     "COUNTER_MINUTES": "Minute"
   },
   "INFO": {
-    "TITLE": "Informacije",
-    "SUBTITLE": "Vse informacije, ki jih potrebujete za udeležbo na najini poroki.",
+    "TITLE": "Mateja & Valentino",
     "CHURCH": {
-      "DESCRIPTION": "Maša bo v soboto, 31. maja, ob 14.00 v cerkvi sv. Martina v Doberdò del Lago.",
-      "IMAGE_ALT": "Cerkev Doberdò del Lago"
+      "DESCRIPTION": "Poročni obred bo v<br/><b> soboto, 31. maja 2025</b>, ob <b>14. uri</b> v cerkvi Sv. Martina v <span class=\"font-tangerine-regular text-2xl/5\">Doberdobu.</span>"
     },
     "RECEPTION": {
-      "DESCRIPTION_1": "Po slovesnosti se bo praznovanje nadaljevalo na",
+      "DESCRIPTION_1": "Po obredu se bo poročno slavje nadaljevalo na:",
       "DESCRIPTION_2": "Posestvu Castelvecchio",
-      "ADDRESS": "Via Castelnuovo 2 (Sagrado).",
-      "IMAGE_ALT": "Posestvo Castelvecchio"
+      "ADDRESS": "Via Castelnuovo 2 (Zagraj)"
     },
     "RSVP": {
-      "CONFIRMATION": "Prosimo za potrditev udeležbe do 30. aprila 2025.",
-      "DIETARY": "Posebne prehranske zahteve (alergije/intolerance) sporočite neposredno mladoporočencema.",
-      "CONTACT_1": "Valentino Stefanizzi +39 340 705 7800",
-      "CONTACT_2": "Mateja Jarc +39 333 856 0337"
+      "CONFIRMATION": "Prosiva, da potrdite svojo prisotnost do <b>30. aprila 2025.</b>",
+      "DIETARY": "Sporočite nama morebitne prehranske posebnosti (alergije/intolerance).",
+      "CONTACT_1": "Valentino Stefanizzi",
+      "CONTACT_1_PHONE": "+39 340 705 7800",
+      "CONTACT_2": "Mateja Jarc",
+      "CONTACT_2_PHONE": "+39 333 856 0337"
     }
   },
   "GIFT": {
-    "TITLE": "Darila",
-    "SUBTITLE": "Če nama želite podariti darilo, lahko to storite tukaj.",
-    "DESCRIPTION_1": "Potovanje tisoč milj se vedno začne s prvim korakom…",
-    "DESCRIPTION_2": "Hvala vsem, ki boste pomagali uresničiti naše sanje.",
-    "IBAN": "IBAN: IT27 Q089 28646 3001 00000 51678",
-    "ACCOUNT_HOLDER": "Na ime: Valentino Stefanizzi in Mateja Jarc",
-    "PURPOSE": "Namen: Poroka darilo",
-    "IMAGE_ALT_1": "Slika letala",
-    "IMAGE_ALT_2": "Slika Japonske"
+    "TITLE": "Mateja & Valentino",
+    "DESCRIPTION_1": "Dolga potovanja se vedno pričnejo s prvim korakom …",
+    "DESCRIPTION_2": "Hvala vsakemu, ki bo postavil krila najinim željam.",
+    "IBAN": "Številka računa:",
+    "IBAN_NUMBER": "IT27 Q089 28646 3001 00000 51678",
+    "ACCOUNT_HOLDER": "<b>Prejemnik:</b><br/><i>Valentino Stefanizzi in Mateja Jarc</i>",
+    "PURPOSE": "<b>Namen:</b><br/><i>Poročno darilo</i>"
   }
 }
